@@ -28,144 +28,144 @@
 
   <!-- ✅ Meta -->
   <meta name="description" content="Learn languages faster with Talkpal AI — practice speaking, get real-time corrections, and enjoy smarter lessons powered by AI. Promoted by Vellorey Media." />
+<style>
+  :root {
+    --navy: #0d1b2a;
+    --accent: #f5c342;
+    --white: #ffffff;
+    --muted: #94a3b8;
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
 
-  <style>
-    :root {
-      --navy: #0d1b2a;
-      --accent: #f5c342;
-      --white: #ffffff;
-      --muted: #94a3b8;
-      font-family: 'Poppins', system-ui, sans-serif;
-    }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: linear-gradient(180deg, #0C1C3C 0%, #071020 100%); /* Blue Zodiac gradient */
+    color: var(--white);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
 
-    body {
-      background: linear-gradient(180deg, #071020 0%, #0d1b2a 100%);
-      color: var(--white);
-      -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
-    }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0C1C3C; /* Blue Zodiac — matches logo */
+    padding: 14px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  }
 
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #121212;
-      padding: 14px 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
-    }
+  header img {
+    height: 45px;
+    margin-right: 10px;
+  }
 
-    header img {
-      height: 45px;
-      margin-right: 10px;
-    }
+  header span {
+    color: var(--accent);
+    font-size: 20px;
+    font-weight: 600;
+  }
 
-    header span {
-      color: var(--accent);
-      font-size: 20px;
-      font-weight: 600;
-    }
+  .hero {
+    max-width: 1100px;
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 30px;
+  }
 
+  .hero-text {
+    flex: 1 1 450px;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .hero-text p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 24px;
+  }
+
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--navy);
+    padding: 14px 26px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 20px rgba(245,195,66,0.25);
+  }
+
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(245,195,66,0.35);
+  }
+
+  .hero-img {
+    flex: 1 1 420px;
+    text-align: center;
+  }
+
+  .hero-img img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 14px;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.5);
+  }
+
+  .section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+
+  .section h2 {
+    font-size: 26px;
+    margin-bottom: 14px;
+  }
+
+  .feature {
+    background: rgba(255,255,255,0.05);
+    padding: 14px 18px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+  }
+
+  .feature strong {
+    color: var(--accent);
+  }
+
+  footer {
+    text-align: center;
+    color: rgba(255,255,255,0.6);
+    font-size: 13px;
+    padding: 30px 0;
+  }
+
+  @media (max-width: 880px) {
     .hero {
-      max-width: 1100px;
-      margin: 60px auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      padding: 0 20px;
-      gap: 30px;
+      flex-direction: column;
+      text-align: center;
     }
-
-    .hero-text {
-      flex: 1 1 450px;
-    }
-
     .hero-text h1 {
-      font-size: 36px;
-      line-height: 1.2;
-      margin-bottom: 16px;
+      font-size: 28px;
     }
-
-    .hero-text p {
-      font-size: 17px;
-      line-height: 1.6;
-      color: rgba(255,255,255,0.9);
-      margin-bottom: 24px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: var(--accent);
-      color: var(--navy);
-      padding: 14px 26px;
-      border-radius: 10px;
-      font-weight: 700;
-      text-decoration: none;
-      transition: all 0.25s ease;
-      box-shadow: 0 8px 20px rgba(245,195,66,0.25);
-    }
-
-    .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 28px rgba(245,195,66,0.35);
-    }
-
-    .hero-img {
-      flex: 1 1 420px;
-      text-align: center;
-    }
-
     .hero-img img {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 14px;
-      box-shadow: 0 8px 28px rgba(0,0,0,0.5);
+      max-width: 320px;
     }
+  }
+</style>
 
-    .section {
-      max-width: 1000px;
-      margin: 60px auto;
-      padding: 0 20px;
-    }
-
-    .section h2 {
-      font-size: 26px;
-      margin-bottom: 14px;
-    }
-
-    .feature {
-      background: rgba(255,255,255,0.05);
-      padding: 14px 18px;
-      border-radius: 10px;
-      margin-bottom: 12px;
-    }
-
-    .feature strong {
-      color: var(--accent);
-    }
-
-    footer {
-      text-align: center;
-      color: rgba(255,255,255,0.6);
-      font-size: 13px;
-      padding: 30px 0;
-    }
-
-    @media (max-width: 880px) {
-      .hero {
-        flex-direction: column;
-        text-align: center;
-      }
-      .hero-text h1 {
-        font-size: 28px;
-      }
-      .hero-img img {
-        max-width: 320px;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -209,6 +209,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
