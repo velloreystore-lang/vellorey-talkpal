@@ -1,129 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vellorey Affiliates | TalkPal AI Learning</title>
+  <title>Master Any Language 5× Faster — Talkpal · Vellorey Media</title>
+
+  <!-- ✅ Favicon -->
   <link rel="icon" type="image/jpeg" href="Vellorey logo.jpg" />
 
-  <style>
-    :root {
-      --navy: #0d1b2a;
-      --accent: #f5c342;
-      --muted: #b9c1cc;
-      --white: #ffffff;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(180deg, #071020 0%, #0d1b2a 100%);
-      color: var(--white);
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    header {
-      margin-bottom: 25px;
-    }
-
-    header img {
-      height: 70px;
-      border-radius: 10px;
-      margin-bottom: 10px;
-    }
-
-    h1 {
-      color: var(--accent);
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-
-    p.lead {
-      color: var(--muted);
-      font-size: 16px;
-      max-width: 600px;
-      margin: 0 auto 25px;
-      line-height: 1.6;
-    }
-
-    .offer-image {
-      width: 100%;
-      max-width: 420px;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(2,8,23,0.6);
-      margin: 0 auto 20px;
-      display: block;
-    }
-
-    .cta-button {
-      background-color: var(--accent);
-      color: var(--navy);
-      font-weight: 600;
-      padding: 14px 38px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-size: 16px;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 12px rgba(245,195,66,0.3);
-    }
-
-    .cta-button:hover {
-      background-color: #ffea75;
-      transform: translateY(-2px);
-    }
-
-    footer {
-      margin-top: 35px;
-      font-size: 13px;
-      color: rgba(255,255,255,0.6);
-    }
-
-    @media (max-width: 600px) {
-      h1 { font-size: 22px; }
-      p.lead { font-size: 15px; }
-    }
-  </style>
-
-  <!-- Facebook Pixel -->
+  <!-- ✅ Facebook Pixel -->
   <script>
-    !function(f,b,e,v,n,t,s){
-      if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)
-    }(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(
+    window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '24520333104276332');
     fbq('track', 'PageView');
   </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=24520333104276332&ev=PageView&noscript=1"/>
-  </noscript>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=24520333104276332&ev=PageView&noscript=1"
+  /></noscript>
+
+  <meta name="description" content="Learn languages faster with Talkpal AI — practice speaking, get real-time corrections, and enjoy smarter lessons powered by AI. Promoted by Vellorey Media." />
+
+  <style>
+    :root {
+      --navy:#0d1b2a;
+      --accent:#f5c342;
+      --muted:#94a3b8;
+      --white:#ffffff;
+      --maxw:1024px;
+      font-family: "Poppins", system-ui, -apple-system, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg,#071020 0%, #0d1b2a 100%);
+      color: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:12px 20px;
+      background-color:#121212;
+      box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    header img { height:45px; }
+    header span {
+      color: #FFD700;
+      font-weight:600;
+      font-size:20px;
+    }
+
+    .wrap { max-width:var(--maxw); margin:28px auto; padding:24px; }
+    .card {
+      background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+      border-radius:14px;
+      padding:28px;
+      box-shadow:0 8px 30px rgba(2,8,23,0.6);
+    }
+
+    h1 {
+      font-size:30px;
+      line-height:1.2;
+      margin:10px 0 16px;
+    }
+    p.lead { font-size:17px; color:rgba(255,255,255,0.9); }
+
+    .hero {
+      display:grid;
+      grid-template-columns:1fr 420px;
+      gap:20px;
+      align-items:center;
+    }
+    .hero img {
+      width:100%;
+      height:auto;
+      border-radius:10px;
+      box-shadow:0 10px 30px rgba(2,8,23,0.6);
+    }
+
+    .btn {
+      display:inline-block;
+      background:var(--accent);
+      color:var(--navy);
+      padding:14px 22px;
+      border-radius:10px;
+      font-weight:700;
+      text-decoration:none;
+      box-shadow:0 6px 18px rgba(245,195,66,0.2);
+      transition:transform 0.2s, box-shadow 0.2s;
+    }
+    .btn:hover {
+      transform:translateY(-2px);
+      box-shadow:0 10px 20px rgba(245,195,66,0.25);
+    }
+
+    .section { margin-top:28px; }
+    .section h2 { font-size:22px; margin-bottom:10px; }
+    .features {
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+      margin-top:8px;
+    }
+    .feature {
+      background:rgba(255,255,255,0.04);
+      border-radius:10px;
+      padding:12px 16px;
+    }
+    .feature strong { color:var(--accent); }
+    footer {
+      margin-top:28px;
+      text-align:center;
+      color:rgba(255,255,255,0.65);
+      font-size:13px;
+    }
+
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr;gap:18px}
+      .hero img{order:-1}
+      h1{font-size:24px}
+    }
+  </style>
 </head>
 
 <body>
   <header>
     <img src="Vellorey logo.jpg" alt="Vellorey Logo">
-    <h1>Master Any Language 5× Faster with TalkPal AI</h1>
+    <span>Vellorey Media</span>
   </header>
 
-  <p class="lead">
-    Experience smarter learning with <strong>TalkPal AI</strong> — your personal language coach that helps you 
-    practice, speak, and grow fluency through interactive AI-powered sessions.
-  </p>
+  <div class="wrap">
+    <div class="card">
 
-  <img class="offer-image" src="https://www.awltovhc.com/image-101570092-17139033" alt="TalkPal Offer">
+      <div class="hero">
+        <div>
+          <h1>Learn Any Language 5× Faster with Talkpal AI</h1>
+          <p class="lead">
+            Talkpal isn’t your average language app — it’s an AI-powered tutor that listens, corrects, and guides you in real-time. 
+            Whether you’re starting from scratch or polishing fluency, Talkpal helps you make daily progress that actually sticks.
+          </p>
+        </div>
 
-  <a class="cta-button" href="https://www.tkqlhce.com/click-101570092-17139033" target="_blank" rel="noopener noreferrer">
-    Start Learning with TalkPal
-  </a>
+      <div class="section">
+        <h2>Why Learners Love Talkpal</h2>
+        <div class="features">
+          <div class="feature"><strong>Personalized AI Lessons</strong> — Every session adapts to your level and language goals.</div>
+          <div class="feature"><strong>Real-Time Speaking Feedback</strong> — Improve pronunciation and fluency through instant voice coaching.</div>
+          <div class="feature"><strong>Fast, Visible Progress</strong> — Smart tracking keeps you motivated and consistent.</div>
+          <div class="feature"><strong>Learn Anytime</strong> — Practice whenever you want — on your phone, tablet, or PC.</div>
+        </div>
+      </div>
 
-  <footer>
-    © 2025 Vellorey Affiliates · Powered by CJ Partner Network
-  </footer>
+      <div class="section">
+        <h2>What People Are Saying</h2>
+        <p style="font-size:15px; color:rgba(255,255,255,0.85); line-height:1.6;">
+          “I was skeptical at first, but Talkpal genuinely feels like chatting with a real teacher. 
+          I’ve been studying Spanish for just three weeks, and my confidence in speaking has skyrocketed.”
+        </p>
+        <p style="font-size:13px; color:var(--muted); margin-top:-8px;">— Verified Talkpal User</p>
+      </div>
+  <div>
+          <img src="https://www.awltovhc.com/image-101570092-17139033" alt="Talkpal Preview">
+        </div>
+      </div>
+      <div class="section" style="text-align:center;">
+        <h2>Ready to Start Speaking Like a Native?</h2>
+        <p style="font-size:16px; color:rgba(255,255,255,0.9); max-width:600px; margin:0 auto 16px;">
+          Unlock your potential with AI-guided lessons that fit your pace and goals. Join thousands of learners improving faster with Talkpal.
+        </p>
+        <a href="https://www.anrdoezrs.net/click-101570092-17139033" target="_blank" rel="noopener noreferrer" class="btn">Try Talkpal Today</a>
+      </div>
+
+      <footer>
+        © 2025 Vellorey Media · Affiliate Partner · Promoting Smart Tools & Honest Reviews
+      </footer>
+
+    </div>
+  </div>
 </body>
 </html>
+
 
