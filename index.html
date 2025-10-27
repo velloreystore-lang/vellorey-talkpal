@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Master Any Language 5× Faster — Talkpal · Vellorey Media</title>
 
-  <!-- ✅ Favicon -->
   <link rel="icon" type="image/jpeg" href="Vellorey logo.jpg" />
 
   <!-- ✅ Facebook Pixel -->
@@ -39,6 +38,7 @@
       background: linear-gradient(180deg,#071020 0%, #0d1b2a 100%);
       color: var(--white);
       -webkit-font-smoothing: antialiased;
+      scroll-behavior: smooth;
     }
 
     header {
@@ -79,7 +79,12 @@
       gap:20px;
       align-items:center;
     }
-    .hero img {
+    .hero-images {
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+    .hero-images img {
       width:100%;
       height:auto;
       border-radius:10px;
@@ -116,6 +121,7 @@
       padding:12px 16px;
     }
     .feature strong { color:var(--accent); }
+
     footer {
       margin-top:28px;
       text-align:center;
@@ -123,10 +129,31 @@
       font-size:13px;
     }
 
+    /* Scroll icon */
+    .scroll-down {
+      position:fixed;
+      bottom:40px;
+      left:50%;
+      transform:translateX(-50%);
+      color:var(--accent);
+      font-size:22px;
+      animation:bounce 1.4s infinite;
+      opacity:0.85;
+      transition:opacity 0.4s ease;
+      cursor:pointer;
+      z-index:99;
+    }
+
+    @keyframes bounce {
+      0%,100%{transform:translate(-50%,0);}
+      50%{transform:translate(-50%,8px);}
+    }
+
     @media (max-width:880px){
       .hero{grid-template-columns:1fr;gap:18px}
-      .hero img{order:-1}
       h1{font-size:24px}
+      .hero-images{flex-direction:row;justify-content:center}
+      .hero-images img{max-width:48%}
     }
   </style>
 </head>
@@ -148,16 +175,15 @@
             Whether you’re starting from scratch or polishing fluency, Talkpal helps you make daily progress that actually sticks.
           </p>
         </div>
-        <div> 
-          <a href="https://www.dpbolvw.net/click-101570092-17139012" >
-<img src="https://www.tqlkg.com/image-101570092-17139012"  
-       </div>
 
+        <div class="hero-images">
+          <a href="https://www.dpbolvw.net/click-101570092-17139012" target="_blank">
+            <img src="https://www.tqlkg.com/image-101570092-17139012" alt="Talkpal Offer 1">
+          </a>
+          <img src="https://www.awltovhc.com/image-101570092-17139033" alt="Talkpal Offer 2">
+        </div>
+      </div>
 
-
-
-
-        
       <div class="section">
         <h2>Why Learners Love Talkpal</h2>
         <div class="features">
@@ -168,19 +194,7 @@
         </div>
       </div>
 
-      <div class="section">
-        <h2>What People Are Saying</h2>
-        <p style="font-size:15px; color:rgba(255,255,255,0.85); line-height:1.6;">
-          “I was skeptical at first, but Talkpal genuinely feels like chatting with a real teacher. 
-          I’ve been studying Spanish for just three weeks, and my confidence in speaking has skyrocketed.”
-        </p>
-        <p style="font-size:13px; color:var(--muted); margin-top:-8px;">— Verified Talkpal User</p>
-      </div>
-  <div>
-          <img src="https://www.awltovhc.com/image-101570092-17139033" alt="Talkpal Preview">
-        </div>
-      </div>
-      <div class="section" style="text-align:center;">
+      <div class="section" style="text-align:center;" id="cta">
         <h2>Ready to Start Speaking Like a Native?</h2>
         <p style="font-size:16px; color:rgba(255,255,255,0.9); max-width:600px; margin:0 auto 16px;">
           Unlock your potential with AI-guided lessons that fit your pace and goals. Join thousands of learners improving faster with Talkpal.
@@ -191,12 +205,30 @@
       <footer>
         © 2025 Vellorey Media · Affiliate Partner · Promoting Smart Tools & Honest Reviews
       </footer>
-
     </div>
   </div>
+
+  <!-- scroll icon -->
+  <div class="scroll-down" id="scrollIcon">↓ Scroll Down</div>
+
+  <script>
+    const scrollIcon = document.getElementById('scrollIcon');
+    const ctaSection = document.getElementById('cta');
+
+    window.addEventListener('scroll', () => {
+      const rect = ctaSection.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.8) {
+        scrollIcon.style.opacity = '0';
+        setTimeout(()=>scrollIcon.style.display='none',400);
+      } else {
+        scrollIcon.style.opacity = '0.85';
+        scrollIcon.style.display='block';
+      }
+    });
+
+    scrollIcon.addEventListener('click', ()=> {
+      ctaSection.scrollIntoView({behavior:'smooth'});
+    });
+  </script>
 </body>
 </html>
-
-
-
-
