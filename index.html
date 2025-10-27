@@ -1,13 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Master Any Language 5× Faster — Talkpal · Vellorey Media</title>
-
+  <title>Master Any Language 5× Faster — TalkPal · Vellorey Media</title>
   <link rel="icon" type="image/jpeg" href="Vellorey logo.jpg" />
 
-  <!-- ✅ Facebook Pixel -->
+  <!-- Facebook Pixel -->
   <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -15,145 +14,126 @@
     t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(
     window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '24520333104276332');
-    fbq('track', 'PageView');
+    fbq('track','PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=24520333104276332&ev=PageView&noscript=1"
-  /></noscript>
+    src="https://www.facebook.com/tr?id=24520333104276332&ev=PageView&noscript=1" /></noscript>
 
-  <meta name="description" content="Learn languages faster with Talkpal AI — practice speaking, get real-time corrections, and enjoy smarter lessons powered by AI. Promoted by Vellorey Media." />
+  <meta name="description" content="Learn languages faster with TalkPal AI — practice speaking, get real-time corrections, and enjoy smarter lessons powered by AI. Promoted by Vellorey Media." />
 
   <style>
     :root {
-      --navy:#0d1b2a;
-      --accent:#f5c342;
-      --muted:#94a3b8;
-      --white:#ffffff;
-      --maxw:1024px;
+      --navy: #0d1b2a;
+      --accent: #f5c342;
+      --muted: #94a3b8;
+      --white: #ffffff;
+      --maxw: 1024px;
       font-family: "Poppins", system-ui, -apple-system, sans-serif;
     }
-    * { box-sizing: border-box; }
+    * { box-sizing: border-box; margin:0; padding:0; }
     body {
-      margin: 0;
       background: linear-gradient(180deg,#071020 0%, #0d1b2a 100%);
       color: var(--white);
       -webkit-font-smoothing: antialiased;
-      scroll-behavior: smooth;
+      text-align: center;
+      padding: 40px 20px;
     }
-
     header {
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px;
-      padding:12px 20px;
-      background-color:#121212;
-      box-shadow:0 4px 10px rgba(0,0,0,0.2);
+      margin-bottom: 30px;
     }
-
-    header img { height:45px; }
-    header span {
-      color: #FFD700;
-      font-weight:600;
-      font-size:20px;
+    header img {
+      height: 70px;
+      border-radius: 10px;
+      margin-bottom: 10px;
     }
-
-    .wrap { max-width:var(--maxw); margin:28px auto; padding:24px; }
-    .card {
-      background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
-      border-radius:14px;
-      padding:28px;
-      box-shadow:0 8px 30px rgba(2,8,23,0.6);
-    }
-
     h1 {
-      font-size:30px;
-      line-height:1.2;
-      margin:10px 0 16px;
+      font-size: 28px;
+      color: var(--accent);
+      margin-bottom: 10px;
     }
-    p.lead { font-size:17px; color:rgba(255,255,255,0.9); }
+    p.lead {
+      color: var(--muted);
+      font-size: 16px;
+      max-width: 600px;
+      margin: 0 auto 30px;
+      line-height:1.6;
+    }
 
-    .hero {
-      display:grid;
-      grid-template-columns:1fr 420px;
-      gap:20px;
-      align-items:center;
+    .columns {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
     }
-    .hero-images {
-      display:flex;
-      flex-direction:column;
-      gap:12px;
+    .column-text {
+      flex: 1 1 400px;
+      text-align: left;
     }
-    .hero-images img {
-      width:100%;
-      height:auto;
-      border-radius:10px;
-      box-shadow:0 10px 30px rgba(2,8,23,0.6);
+    .column-images {
+      flex: 1 1 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+    }
+    .column-images img {
+      width: 100%;
+      max-width: 320px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(2,8,23,0.6);
     }
 
     .btn {
-      display:inline-block;
-      background:var(--accent);
-      color:var(--navy);
-      padding:14px 22px;
-      border-radius:10px;
+      display: inline-block;
+      background: var(--accent);
+      color: var(--navy);
+      padding: 14px 32px;
+      border-radius: 30px;
+      font-size: 16px;
       font-weight:700;
-      text-decoration:none;
-      box-shadow:0 6px 18px rgba(245,195,66,0.2);
-      transition:transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      box-shadow:0 4px 12px rgba(245,195,66,0.3);
+      transition: transform 0.2s, box-shadow 0.2s;
+      margin-bottom: 60px;
     }
     .btn:hover {
-      transform:translateY(-2px);
+      transform: translateY(-2px);
       box-shadow:0 10px 20px rgba(245,195,66,0.25);
     }
 
-    .section { margin-top:28px; }
-    .section h2 { font-size:22px; margin-bottom:10px; }
-    .features {
-      display:flex;
-      flex-direction:column;
-      gap:14px;
-      margin-top:8px;
-    }
-    .feature {
-      background:rgba(255,255,255,0.04);
-      border-radius:10px;
-      padding:12px 16px;
-    }
-    .feature strong { color:var(--accent); }
-
     footer {
-      margin-top:28px;
-      text-align:center;
-      color:rgba(255,255,255,0.65);
-      font-size:13px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.65);
+      margin-top: 40px;
     }
 
-    /* Scroll icon */
     .scroll-down {
-      position:fixed;
-      bottom:40px;
-      left:50%;
-      transform:translateX(-50%);
-      color:var(--accent);
-      font-size:22px;
-      animation:bounce 1.4s infinite;
-      opacity:0.85;
-      transition:opacity 0.4s ease;
-      cursor:pointer;
-      z-index:99;
+      position: fixed;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: var(--accent);
+      font-size: 22px;
+      opacity: 0;
+      animation: bounce 1.4s infinite;
+      z-index: 99;
+      cursor: pointer;
     }
-
     @keyframes bounce {
-      0%,100%{transform:translate(-50%,0);}
-      50%{transform:translate(-50%,8px);}
+      0%,100% { transform: translate(-50%,0); }
+      50% { transform: translate(-50%,8px); }
     }
-
-    @media (max-width:880px){
-      .hero{grid-template-columns:1fr;gap:18px}
-      h1{font-size:24px}
-      .hero-images{flex-direction:row;justify-content:center}
-      .hero-images img{max-width:48%}
+    @media (max-width: 900px) {
+      .columns {
+        flex-direction: column;
+      }
+      .column-text, .column-images {
+        width:100%;
+      }
+      h1 { font-size:24px; }
+      p.lead { font-size:15px; }
     }
   </style>
 </head>
@@ -161,73 +141,43 @@
 <body>
   <header>
     <img src="Vellorey logo.jpg" alt="Vellorey Logo">
-    <span>Vellorey Media</span>
+    <h1>Learn Any Language 5× Faster with TalkPal AI</h1>
   </header>
 
-  <div class="wrap">
-    <div class="card">
-
-      <div class="hero">
-        <div>
-          <h1>Learn Any Language 5× Faster with Talkpal AI</h1>
-          <p class="lead">
-            Talkpal isn’t your average language app — it’s an AI-powered tutor that listens, corrects, and guides you in real-time. 
-            Whether you’re starting from scratch or polishing fluency, Talkpal helps you make daily progress that actually sticks.
-          </p>
-        </div>
-
-        <div class="hero-images">
-          <a href="https://www.dpbolvw.net/click-101570092-17139012" target="_blank">
-            <img src="https://www.tqlkg.com/image-101570092-17139012" alt="Talkpal Offer 1">
-          </a>
-          <img src="https://www.awltovhc.com/image-101570092-17139033" alt="Talkpal Offer 2">
-        </div>
-      </div>
-
-      <div class="section">
-        <h2>Why Learners Love Talkpal</h2>
-        <div class="features">
-          <div class="feature"><strong>Personalized AI Lessons</strong> — Every session adapts to your level and language goals.</div>
-          <div class="feature"><strong>Real-Time Speaking Feedback</strong> — Improve pronunciation and fluency through instant voice coaching.</div>
-          <div class="feature"><strong>Fast, Visible Progress</strong> — Smart tracking keeps you motivated and consistent.</div>
-          <div class="feature"><strong>Learn Anytime</strong> — Practice whenever you want — on your phone, tablet, or PC.</div>
-        </div>
-      </div>
-
-      <div class="section" style="text-align:center;" id="cta">
-        <h2>Ready to Start Speaking Like a Native?</h2>
-        <p style="font-size:16px; color:rgba(255,255,255,0.9); max-width:600px; margin:0 auto 16px;">
-          Unlock your potential with AI-guided lessons that fit your pace and goals. Join thousands of learners improving faster with Talkpal.
-        </p>
-        <a href="https://www.anrdoezrs.net/click-101570092-17139033" target="_blank" rel="noopener noreferrer" class="btn">Try Talkpal Today</a>
-      </div>
-
-      <footer>
-        © 2025 Vellorey Media · Affiliate Partner · Promoting Smart Tools & Honest Reviews
-      </footer>
+  <div class="columns">
+    <div class="column-text">
+      <p class="lead">TalkPal isn’t your average language app — it’s an AI-powered tutor that listens, corrects, and guides you in real time. Whether you’re just starting or leveling up, make real progress daily.</p>
+    </div>
+    <div class="column-images">
+      <img src="https://www.awltovhc.com/image-101570092-17139033" alt="TalkPal Preview 1">
+      <img src="https://www.awltovhc.com/image-101570092-17139033" alt="TalkPal Preview 2">
     </div>
   </div>
 
-  <!-- scroll icon -->
+  <a href="https://www.anrdoezrs.net/click-101570092-17139033" target="_blank" rel="noopener noreferrer" class="btn">Start Learning with TalkPal</a>
+
+  <footer>© 2025 Vellorey Media · Affiliate Partner · Promoting Smart Tools & Honest Reviews</footer>
+
   <div class="scroll-down" id="scrollIcon">↓ Scroll Down</div>
 
   <script>
     const scrollIcon = document.getElementById('scrollIcon');
-    const ctaSection = document.getElementById('cta');
+    // show after 3 seconds
+    setTimeout(() => {
+      scrollIcon.style.opacity = '0.85';
+    }, 3000);
 
     window.addEventListener('scroll', () => {
-      const rect = ctaSection.getBoundingClientRect();
+      const btn = document.querySelector('.btn');
+      const rect = btn.getBoundingClientRect();
       if (rect.top < window.innerHeight * 0.8) {
         scrollIcon.style.opacity = '0';
-        setTimeout(()=>scrollIcon.style.display='none',400);
-      } else {
-        scrollIcon.style.opacity = '0.85';
-        scrollIcon.style.display='block';
+        setTimeout(()=> { scrollIcon.style.display='none'; }, 400);
       }
     });
 
-    scrollIcon.addEventListener('click', ()=> {
-      ctaSection.scrollIntoView({behavior:'smooth'});
+    scrollIcon.addEventListener('click', () => {
+      document.querySelector('.btn').scrollIntoView({behavior:'smooth'});
     });
   </script>
 </body>
