@@ -7,82 +7,81 @@
   <link rel="icon" type="image/jpeg" href="Vellorey logo.jpg" />
 
   <style>
+    :root {
+      --navy: #0d1b2a;
+      --accent: #f5c342;
+      --muted: #b9c1cc;
+      --white: #ffffff;
+    }
+
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #0a0a23, #1b1b3a);
-      color: #fff;
+      background: linear-gradient(180deg, #071020 0%, #0d1b2a 100%);
+      color: var(--white);
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
       padding: 40px 20px;
     }
 
     header {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
     header img {
       height: 70px;
-      border-radius: 12px;
+      border-radius: 10px;
       margin-bottom: 10px;
     }
 
     h1 {
-      font-size: 26px;
-      color: #FFD700;
-      margin: 10px 0 5px;
+      color: var(--accent);
+      font-size: 28px;
+      margin-bottom: 10px;
     }
 
-    p {
+    p.lead {
+      color: var(--muted);
       font-size: 16px;
-      max-width: 640px;
+      max-width: 600px;
       margin: 0 auto 25px;
       line-height: 1.6;
-      color: #ddd;
     }
 
     .offer-image {
       width: 100%;
       max-width: 420px;
       border-radius: 12px;
-      margin: 10px auto 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      box-shadow: 0 6px 20px rgba(2,8,23,0.6);
+      margin: 0 auto 20px;
       display: block;
     }
 
     .cta-button {
-      background-color: #FFD700;
-      color: #121212;
+      background-color: var(--accent);
+      color: var(--navy);
       font-weight: 600;
-      padding: 14px 40px;
+      padding: 14px 38px;
       border-radius: 30px;
-      font-size: 16px;
       text-decoration: none;
+      font-size: 16px;
       transition: all 0.3s ease;
-      box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
-      display: inline-block;
-      margin-bottom: 40px;
+      box-shadow: 0 4px 12px rgba(245,195,66,0.3);
     }
 
     .cta-button:hover {
-      background-color: #ffef70;
+      background-color: #ffea75;
       transform: translateY(-2px);
     }
 
     footer {
+      margin-top: 35px;
       font-size: 13px;
-      color: #aaa;
-      text-align: center;
-      margin-top: auto;
+      color: rgba(255,255,255,0.6);
     }
 
     @media (max-width: 600px) {
       h1 { font-size: 22px; }
-      p { font-size: 15px; }
+      p.lead { font-size: 15px; }
     }
   </style>
 
@@ -96,7 +95,7 @@
       t.src=v;s=b.getElementsByTagName(e)[0];
       s.parentNode.insertBefore(t,s)
     }(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '24520333104276332'); 
+    fbq('init', '24520333104276332');
     fbq('track', 'PageView');
   </script>
   <noscript>
@@ -111,9 +110,9 @@
     <h1>Master Any Language 5× Faster with TalkPal AI</h1>
   </header>
 
-  <p>
-    Level up your language skills with <strong>TalkPal AI</strong> — your personal coach that helps you
-    speak, learn, and improve fluency with real-time AI lessons. Fun, fast, and effective!
+  <p class="lead">
+    Experience smarter learning with <strong>TalkPal AI</strong> — your personal language coach that helps you 
+    practice, speak, and grow fluency through interactive AI-powered sessions.
   </p>
 
   <img class="offer-image" src="https://www.awltovhc.com/image-101570092-17139033" alt="TalkPal Offer">
@@ -127,3 +126,4 @@
   </footer>
 </body>
 </html>
+
