@@ -61,29 +61,53 @@
     }
 
     .hero {
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:30px;
-      flex-wrap:wrap;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 40px 0;
+}
 
-    .hero-text {flex:1 1 400px;}
-    .hero-text h1 {font-size:32px;margin-bottom:16px;line-height:1.2;}
-    .hero-text p {font-size:17px;color:rgba(255,255,255,0.9);line-height:1.6;}
+.hero > div {
+  flex: 1 1 450px;
+  text-align: left;
+}
 
-    .hero-images {
-      flex:1 1 350px;
-      display:flex;
-      flex-direction:column;
-      gap:14px;
-      align-items:center;
-    }
-    .hero-images img {
-      width:100%;
-      border-radius:12px;
-      box-shadow:0 10px 30px rgba(2,8,23,0.6);
-    }
+.hero-images {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-images img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(2,8,23,0.6);
+  transition: transform 0.3s ease;
+}
+
+.hero-images img:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero > div {
+    text-align: center;
+  }
+  .hero-images img {
+    max-width: 90%;
+  }
+}
+
 
     .section {margin-top:40px;text-align:center;}
     .section h2 {font-size:22px;margin-bottom:10px;}
@@ -226,5 +250,6 @@
   </script>
 </body>
 </html>
+
 
 
